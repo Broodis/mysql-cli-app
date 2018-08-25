@@ -22,5 +22,21 @@ function display() {
         if (err) throw err;
         console.log(res);
     })
-}
+};
 
+var questions = [{
+  name: "productId",
+  type: "rawlist",
+  message: "What is the ID of the product that you would like to purchase?",
+  choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+}, {
+  name: "quantity",
+  type: "input",
+  message: "How many of this product would you like to purchase?",
+}];
+function ask() {
+  inquirer.prompt(questions, function(answers) {
+    if (answer.)
+  })
+
+}
